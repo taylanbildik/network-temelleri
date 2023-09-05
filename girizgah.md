@@ -1,5 +1,5 @@
 # Girizgah
-<img align="left" width="200" height="208" src="https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/girizgahcover.webp">
+<img align="left" width="200" height="208" src="https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/cover/girizgahcover.webp">
 
 Eğer eğitimi tekrar etmek için burada değilsen, bu bölümü atlamanı kesinlikle önermiyorum. Çünkü bu bölüm, eğitimden ne beklemen gerektiği ve nasıl maksimum verimi alabileceğini izah ettiğim önemli bir bölüm. Ancak her şeyden önce bu eğitimden alabileceğin verimin senin çabalarınla doğru orantılı olduğunun da lütfen unutma.
 
