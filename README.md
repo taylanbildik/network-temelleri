@@ -6,3 +6,5 @@ Ağ temelleri hakkında giriş seviyesi teorik bilgi için bu eğitim serisini t
 1- [Girizgah](https://github.com/taylanbildik/network-temelleri/blob/main/girizgah.md) : Eğitimin yapısı ve ilerleyiş biçimi hakkında bilgi ediniyoruz.
 
 2- [Temel Kavramlar](https://github.com/taylanbildik/network-temelleri/blob/main/temel-kavramlar.md) : Eğitim boyunca karşılaşacağımız temel kavramları ele alıyoruz.</th>
+
+3- [Ağ Aygıtları](https://github.com/taylanbildik/network-temelleri/blob/main/ag-aygitlari.md) : Ağ oluşturma ve yönetme konusunda çözümler sunan bazı temel ağ aygıtlarını tanıyoruz.</th>
