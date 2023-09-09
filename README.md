@@ -5,6 +5,8 @@ Ağ temelleri hakkında giriş seviyesi teorik bilgi için bu eğitim serisini t
 
 1- [Girizgah](https://github.com/taylanbildik/network-temelleri/blob/main/girizgah.md) : Eğitimin yapısı ve ilerleyiş biçimi hakkında bilgi ediniyoruz.
 
-2- [Temel Kavramlar](https://github.com/taylanbildik/network-temelleri/blob/main/temel-kavramlar.md) : Eğitim boyunca karşılaşacağımız temel kavramları ele alıyoruz.</th>
+2- [Temel Kavramlar](https://github.com/taylanbildik/network-temelleri/blob/main/temel-kavramlar.md) : Eğitim boyunca karşılaşacağımız temel kavramları ele alıyoruz.
 
-3- [Ağ Aygıtları](https://github.com/taylanbildik/network-temelleri/blob/main/ag-aygitlari.md) : Ağ oluşturma ve yönetme konusunda çözümler sunan bazı temel ağ aygıtlarını tanıyoruz.</th>
+3- [Ağ Aygıtları](https://github.com/taylanbildik/network-temelleri/blob/main/ag-aygitlari.md) : Ağ oluşturma ve yönetme konusunda çözümler sunan bazı temel ağ aygıtlarını tanıyoruz.
+
+4- [OSI TCP/IP Modeli](https://github.com/taylanbildik/network-temelleri/blob/main/osi-modeli.md)  : OSI ve TCP/IP modellerini ele alarak ağın temel çalışma yapısına daha yakından bakıyoruz.
