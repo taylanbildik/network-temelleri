@@ -22,35 +22,40 @@ Hatta Hub olarak geçen cihazlar da aslında fiziksel(layer 1) katmandadır çü
 
 # Layer 2 - Data Link
 
-Data link katmanı, ilk katman olan fiziksel katman ile iletişime geçer. Bu katmanda kablolu bağlantı için kullanılan NIC(network interfaces card) ya da kablosuz bağlantı için kullanılan "wi-fi access card" aygıtları bulunuyor. Bu aygıtlar fiziksel katmandan taşınmış olan bitleri alıyorlar ve benzer şekilde bir cihazın ürettiği bitleri de fiziksel katmana iletiyorlar. 
+Data link katmanı, ilk katman olan fiziksel katman ile iletişime geçilmesini sağlar. Bu katmanda kablolu bağlantı için kullanılan NIC(network interfaces card) ya da kablosuz bağlantı için kullanılan "wi-fi access card" aygıtları bulunuyor. Bu aygıtlar fiziksel katmandan taşınmış olan bitleri alıyorlar ve benzer şekilde bir cihazın ürettiği bitleri de fiziksel katmana iletiyorlar. 
 
-Bu katmandaki her bir cihazın, benzersiz kimlikleri olan **MAC** adresleri vardır. Mac adresi, “**M**edia **A**ccess **C**ontrol” ifadesinin kısaltmasından geliyor. Bu kimlik sayesinde ağa bağlı olan bir cihazı diğer cihazlardan ayırabiliyoruz. Tıpkı IP adresleri gibi fakat bu MAC adresleri, cihaz üreticileri tarafından aygıtlara tek seferliğine tanımlanan benzersiz bir kimliktir.
+Bu katmandaki her bir cihazın yani ağ kartlarının her birinin, benzersiz kimlikleri olan **MAC** adresleri vardır. Mac adresi, “**M**edia **A**ccess **C**ontrol” ifadesinin kısaltmasından geliyor. Ağa bağlanmak isteyen tüm cihazların ağ kartı olması gerektiği için. Ağ kartlarındaki bu MAC adresi yani bu kimlik sayesinde ağa bağlı olan tüm cihazları birbirinden ayırabiliyoruz. Tıpkı IP adresleri gibi fakat bu MAC adresleri, cihaz üreticileri tarafından aygıtlara tek seferliğine tanımlanan benzersiz bir kimliktir.
 
 Örnek adres göstermemiz gerekirse, **MAC** adresi “**00-B0-D0-63-C2-26**” şekilde gözüküyor. 
 
-Fiziksel katmandan gelen verilerin doğru hedeflere iletilebilmesi için de MAC adresi bulunması zorunludur. Çünkü fiziksel katmandaki veriler bu MAC adres bilgisine göre yönlendiriliyor. 
+Fiziksel katmandan gelen verilerin doğru hedeflere iletilebilmesi için de MAC adresi bulunması zorunludur. Çünkü fiziksel katmandaki veriler bu MAC adres bilgisine göre doğru ağ kartına yönlendiriliyor. 
 
-Router ve Switch cihazları da MAC adresi vasıtasıyla yönlendirme yaptığı için bu cihazları da bu katmada sayabiliriz. 
+Örneğin switch aygıtları her bir portuna bağlı olan hostun MAC adresinin bilgisini tutar ve bu bilgiye göre yönlendirme yapar. Bu sebeple Switch aygıtları da aslında fiziksel katmandan gelen verileri, MAC bilgisi sayesinde doğru adrese yönlendiren 2. katmandaki yani "data link" katmanındaki bir cihazdır. 
 
-Örneğin ağları birbirine bağlamak üzere router cihazlarını kullandığımızda, aslında ağları routerların portlarındaki NIC kartlarına bağlıyoruz. Her bir ağ kartının benzersiz bir MAC adresi olduğu için de ağlar arasındaki yönlendirme bu MAC adresleri sayesinde mümkün olabiliyor.
-
-![router-mac.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/osi-modeli/router-mac.webp)
-
+![layer2-switch](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/osi-modeli/layer2-switch.webp)
 <p class="mavi"><strong>ℹ️ Not:</strong> Görselleştirmeler sırasında MAC adresleri kısaltılarak, sembolik olarak eklenmiştir. </p>
 
-Basit diyagram üzerinde de gördüğümüz gibi, Router cihazının sahip olduğu port kadar MAC adresi bulunuyor. Çünkü her bir portta fiziksel katmandan gelen veriyi işleyebilecek olan NIC(ağ kartı) aygıtı mevcut. Fiziksel katmandan gelen verilerin ağ kartları tarafından işlendiğinden bahsettik. MAC adresleri sayesinde de hangi verinin hangi cihazdan geldiği ve hangi cihaza gönderildiği bilinebiliyor. 
 
+Genellikle lokal ağımız dışında diğer ağlardaki cihazlar ile iletişime geçmek istediğimizde, karşılıklı iletişimi birden fazla router aygıtı üzerinden geçerek gerçekleştiriyoruz. Genellikle bu aradaki cihazlar da router aygıtları oluyor. Zaten Router ayıtlarının birden fazla ağı birbirine bağladığından daha önce bahsettik. Router aygıtları da ağlara bağlanırken NIC yani ağ kartları kullandığı ve her bir ağ kartının da benzersiz bir MAC adresi olduğu için aslında aşağıdaki gibi, veriler fiziksel kanaldan MAC adresleri yardımıyla bir ağ kartından bir diğerine adım adım aktarılıyor.
+
+![hop-to-hop.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/osi-modeli/hop-to-hop.webp)
 Eğer açıklamalar şimdilik biraz karmaşık geldiyse hiç merak etmeyin. İleride MAC adresinin kullanımına örnekler üzerinden değindiğimizde bu durum çok daha anlaşılır olacak.
+
+İşte bizzat gördüğümüz gibi MAC yardımıyla 2. katman olan "Data Link" katmanında, aslında bir ağ kartından bir diğerine fiziksel katman aracılığı ile veri iletilmesi mümkün oluyor. 
+
+İlgili paketin uzaktaki hedefine ulaşabilmesi için, yani uçtan uça veri alışverişinin sürdürülebilmesi için de **3. katman** olan "**Network**" katmanına ihtiyacımız var. 
+![end-to-end.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/osi-modeli/end-to-end.webp)
+
 
 # Layer 3 - Network
 
-Ağ katmanının ana işlevi, veri paketlerini kaynak cihazdan hedef cihaza ulaştırmak ve farklı ağlardan geçerken yönlendirme yapmaktır. Hedef belirtme ve yönlendirme işlemleri de, her bir cihazın sahip olduğu IP adresi sayesinde mümkün oluyor.
+"Network" yani "Ağ" katmanının ana işlevi, veri paketlerini kaynak cihazdan hedef cihaza ulaştırmak ve farklı ağlardan geçerken yönlendirme yapmaktır. Hedef belirtme ve yönlendirme işlemleri de, her bir cihazın sahip olduğu IP adresi sayesinde mümkün oluyor.
 
-Daha iyi anlamak için birbirinden farklı iki ağdaki cihazların veri alışverişinde bulunmak istediğini düşünelim. Yönlendirme işinden routerlar sorumlu olduğu için biz hedef IP adresini belirtip, bizim ağımıza bağlı bulunan routera bu paketi iletiyoruz. Router da bağlı olduğu ağlardan uygun olanlara bu paketi iletip ilgili IP adresine bu paketin ulaşmasını sağlıyor. Nasıl olduğunu adım adım ele alalım:
+Daha iyi anlamak için birbirinden farklı iki ağdaki cihazların veri alışverişinde bulunmak istediğini düşünelim. Yönlendirme işinden routerlar sorumlu olduğu için biz hedef IP adresini belirtip, bizim ağımıza bağlı bulunan routera bu paketi iletiyoruz. Router da bağlı olduğu ağlardan uygun olanlara bu paketi iletip, ilgili IP adresine sahip hosta bu paketin ulaşmasını sağlıyor. Nasıl olduğunu adım adım ele alalım:
 
 ![r1.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/osi-modeli/r1.webp)
 
-Bakın kaynak ve hedef IP adresi pakete eklendi. Ayrıca bu paketi uygun yere yönlendirebilmesi için router cihazının MAC adresi de hedef adres olarak eklendi. 
+Öncelikle, kaynak ve hedef IP adresleri pakete eklendi. Ayrıca bu paketi uygun yere yönlendirebilmesi için router cihazının MAC adresi de hedef adres olarak eklendi. 
 
 ![r2.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/osi-modeli/r2.webp)
 
@@ -86,25 +91,25 @@ IP adresi kendisine ait olduğu için bu paketi kabul edip, içeriğini yani DAT
 
 Böylelikle farklı ağlardaki iki hostun iletişim kurması mümkün oluyor.
 
-Adım adım ele aldığımız gibi, lokal ağ içinde IP eşleşmesi olmadığı sürece routerlar MAC adresleri üzerinden paketin uygun ağa yönlendirilmesini sağlıyor. En son router da hedef IP adresindeki hostun kendi ağında olduğunu bildiği için bu hosta MAC adresi sayesinde bu paketi ulaştırıyor.
+Adım adım ele aldığımız gibi; bağlı bulunan ağlarda IP eşleşmesi olmadığı sürece routerlar MAC adresleri sayesinde ilgili paketin, kendilerine bağlı bulunan bir sonraki noktaya yönlendirilmesini sağlıyor. En son router da hedef IP adresindeki hostun kendi ağında olduğunu bildiği için bu hosta, MAC adresi sayesinde bu paketi ulaştırıyor.
 
-MAC adresleri cihazlar arasındaki iletişim ve aktarım için kullanılıyorken, IP adresi ağların ve ağlardaki hostların tanınması için kullanılıyor. 
+Özetle MAC adresleri birbirine bağlı bulunan ağ kartları arasındaki iletişim ve aktarım için kullanılıyorken, IP adresi ağların ve ağlardaki hostların tanınması için yani uçtan uça aktarım için kullanılıyor. 
 
-Burada router cihazlarının IP ile MAC adresini eşleştirebilmesini sağlayan “**ARP**” isimli bir protokol bulunuyor. Bu protokol sayesinde IP ve MAC bilgisi elde edilip, routerların kendi tablosuna bu bilgiler ekleniyor. Bu sayede routerlar, hangi IP adreslerinin hangi MAC ile eşleştiğini bilip buna göre yönlendirme yapabiliyor. Bu konudan da daha sonra ayrıca bahsedeceğiz.
+Burada router cihazlarının IP ile MAC adresini eşleştirebilmesini sağlayan “**ARP**” isimli bir protokol bulunuyor. Bu protokol sayesinde IP ve MAC bilgisi elde edilip, routerların kendi tablosuna bu bilgiler ekleniyor. Bu sayede routerlar, hangi IP adreslerinin hangi MAC ile eşleştiğini bilip buna göre yönlendirme yapabiliyor. Bu konudan daha sonra ayrıca bahsedeceğiz.
 
-Şimdilik 3. katmandaki IP ile 2. katmandaki MAC adresinin, veri paketlerinin iletilebilmesindeki rollerini bilmemiz yeterli.
+Şimdilik 3. katmandaki IP ile 2. katmandaki MAC adresinin, veri paketlerinin iletilebilmesindeki temel rollerini bilmemiz yeterli. 
 
 # Layer 4 - Transport
 
 Şimdiye kadar ele aldığımız anlatımlarda, verilerin tek bir hat üzerinden iletildiğini gördük. Peki ama tüm veriler tek bir hat üzerinden iletiliyorken, doğru programın doğru paketi aldığından nasıl emin olabiliyoruz ?
 
-Örneğin ben aynı anda web tarayıcısı, discord ve spotify gibi internet bağlantısını gerektiren uygulamaları kullanabiliyorum. Bu uygulamaların sorunsuzca veri alışverişinde bulunması için doğru paketlerin doğru araca iletilmesi gerek. Bu da “adresleme şeması” ya da doğrudan “**port**” olarak ifade edilen bir yaklaşım sayesinde mümkün oluyor.
+Örneğin ben web tarayıcısı, discord ve spotify gibi internet bağlantısını gerektiren uygulamaları aynı anda kullanabiliyorum. Bu uygulamaların sorunsuzca veri alışverişinde bulunması için doğru paketlerin doğru araca iletilmesi gerek. Bu da “adresleme şeması” ya da doğrudan “**port**” olarak ifade edilen bir yaklaşım sayesinde mümkün oluyor.
 
 Her bir aracın kendisine ait bir port numarası bulunuyor. Bu sayede veriler bu portlar aracılığı ile yalnızca ilgili olan araçlara iletilebiliyor. Yani tek bir hat üzerinden geliyor olsa da veriler birbirinden izole şekilde, yalnızca doğru portlara iletiliyor. 
 
 ![transport-port.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/osi-modeli/transport-port.webp)
 
-Servislerle iletişim kurulurken gönderici rastgele bir port üzerinden veri gönderip yine aynı port üzerinden veri alabilir. Örneğin bir websitesini ziyaret etmek istediğinizde aşağıdaki gibi IP ve port numaraları adresi üzerinden iletişim kurulabiliyor. 
+Servislerle iletişim kurulurken gönderici, rastgele bir port üzerinden veri gönderip yine aynı port üzerinden veri alabiliyor. Örneğin bir websitesini ziyaret etmek istediğinizde aşağıdaki gibi IP ve port numaraları üzerinden iletişim kuruyorsunuz. 
 
 ![src-dst-port.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/osi-modeli/src-dst-port.webp)
 
@@ -153,7 +158,7 @@ Kısacası, TCP güvenilir veri iletimini sağlarken, UDP hızlı ancak veri bü
 
 Son olarak oturum(session), sunum(presentation) ve uygulama(application) katmanlarını çok kısaca ele alabiliriz. Bu katmanlar ağ bağlantısına ihtiyaç duyan uygulamaların iletişiminin yönetildiği katmandır. Kullanıcılar ağ gerektiren bir uygulamayı kullanırken aslında bu katmanlarla etkileşime geçerler. 
 
-Örneğin bir websitesinin içeriğini görüntülemek istediğimizde, bu içerik bize HTTP(HyperText Transfer Protocol) protokolü üzerinden iletilir. Biz de web tarayıcısı yardımıyla bu HTTP protokolünü çözümleyip görüntüleriz. Bu protokol websitesinin içeriğinin her yerde standart şekilde görüntülenmesini sağlar.
+Örneğin bir websitesinin içeriğini görüntülemek istediğimizde, bu içerik bize HTTP(HyperText Transfer Protocol) protokolü üzerinden iletilir. Biz de web tarayıcısı yardımıyla bu HTTP protokolünü çözümleyip görüntüleriz. Bu protokol websitesi içeriğine her yerden standart şekilde ulaşılabilmesini sağlar.
 
 Benzer şekilde örneğin dosya transferi sırasında FTP yani File Transfer Protocol kullanılıyor. Dosya transferi sağlayan uygulamalar bu protokolü kullanarak karşılıklı olarak dosya transferinde bulunabiliyorlar.
 
