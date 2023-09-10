@@ -122,7 +122,11 @@ Bakın burada, benim Windows hostum **Default Getway** adresi olarak **192.168.1
 ![default-getway-login.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/ag-aygitlari/default-getway-login.webp)
 Bu pencere açıldı çünkü benim bilgisayarımda default getway olarak bu modem(router) kullanılıyor. Yani ben lokal ağımdan geniş ağ olan internete bu geçit(getway) görevi gören modem(router) üzerinden çıkış yapıyorum. Dolayısıyla bu ip adresini girdiğimde modemimi konfigüre edebileceğim pencere açılıyor.
 
-Burada modem, lokal ip adreslerini internet servis sağlayıcısının bana tahsis etmiş olduğu genel(public) ip ile **NAT** sayesinde dönüştürüp benim internet ağına çıkmamı sağlayan bir geçittir(getway). Daha önce lokal ağımıza özel olan ip adreslerinden bahsederken bu durumu ele almıştık hatırlıyorsanız. Şimdi bizzat bu durumu teyit etmiş olduk.
+Burada modem, lokal ip adreslerini internet servis sağlayıcısının bana tahsis etmiş olduğu genel(public) ip ile **NAT**(**N**etwork **A**ddress **T**ranslation) sayesinde dönüştürüp benim internet ağına çıkmamı sağlayan bir geçittir(getway). 
+
+![NAT.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/ag-aygitlari/NAT.webp)
+
+Daha önce lokal ağımıza özel olan ip adreslerinden bahsederken bu durumu ele almıştık hatırlıyorsanız. Şimdi bizzat bu durumu teyit etmiş olduk.
 
 Router sayesinde ağları hiyerarşik bir biçimde birbirine bağlamamız mümkün oluyor. Daha önce örneğini verdiğimiz “bir şirketin alt ağlara bölünmesi” durumu da routerlar sayesinde mümkün oluyor. 
 
