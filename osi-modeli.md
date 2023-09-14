@@ -136,7 +136,7 @@ TCP, “**T**ransmission **C**ontrol **P**rotocol” ifadesinin kısaltmasından
 
 Alıcı ile bağlantı kurulmasına da üçlü el sıkışma(Three-Way Handshake) deniyor. 
 
-Örneğin bir veri paketi TCP ile taşınacaksa öncelikle hedef sunucuya senkronizasyon için **SYN**(**Syn**chronize**)** isimli bir kontrol paketi gönderilir. 
+Örneğin bir veri paketi TCP ile taşınacaksa öncelikle hedef sunucuya senkronizasyon için **SYN**(**Syn**chronize) isimli bir kontrol paketi gönderilir. 
 
 Hedef sunucu bu **SYN** paketini alırsa, yanıt olarak istemciye onay yani **SYN-ACK(Acknowledgment)** paketi ile bağlantı kurmaya hazır olduğunu bildirir.
 
