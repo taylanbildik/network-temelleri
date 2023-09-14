@@ -228,6 +228,8 @@ Taşıma katmanında TCP veya UDP sayesinde verilerin taşınma yöntemi ve hang
 
 Son olarak uygulama katmanı da, kendisine gönderilene veri paketini alıp uygun şekilde işliyor.
 
+![de-layer5-7.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/osi-modeli/de-layer5-7.webp)
+
 İşte kapsülleme ve kapsülü açma işlemi yani ağ üzerinden veri akışı bu şekilde.
 
 Tüm detayları ile olamasa da ağ temellerini kavrayabileceğimiz düzeyde **OSI** ve **TCP/IP** modellerinden bahsetmiş olduk. Eğer bu katmanları ve ek detayları ezberlemenizi gerektiren bir sınava hazırlanmıyorsanız buradaki bilgiler giriş seviyesi temel network bilgisi için yeterli olacaktır. Neticede bunlar yalnızca iletişimi standartlaştırma adına modeller. Veri akışının genel hatlarını belirtmek için kullanılıyorlar. Önemli olan veri akışının temel olarak nelere bağlı olduğunu kavrayabilmek.
