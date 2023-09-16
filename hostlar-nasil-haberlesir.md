@@ -2,7 +2,7 @@
 
 Bu bölümde host cihazlarının birbiri ile iletişim kurabilmesi için gereken şartlardan bahsediyor olacağız.
 
-# Aynı Ağdaki Cihazlar Nasıl Haberleşir ?
+## Aynı Ağdaki Cihazlar Nasıl Haberleşir ?
 
 Bir host aynı ağda olduğu bir başka hosta veri göndereceği zaman, hedef hostun IP adresini bilmesinin yanında MAC adresini de bilmek zorunda. Çünkü daha önce ele aldığımız OSI ve TCP/IP modellerinde de bizzat gördüğümüz gibi cihazların IP adresinden önce MAC adresi tanınıyor. 
 
@@ -42,7 +42,7 @@ ARP gönderilirken broadcast yani tüm cihazları hedefleyerek gönderildiği i�
 
 Lokal ağdaki cihazların MAC adresini nasıl öğrenebileceğimize değindik. Şimdi kısaca harici ağlardaki hostlar ile nasıl iletişime geçebileceğimizi ele alalım.
 
-# Farklı Ağdaki Cihazlar Nasıl Haberleşir ?
+## Farklı Ağdaki Cihazlar Nasıl Haberleşir ?
 
 Bir host harici bir ağdaki host ile iletişime geçmek istediğinde, hedef IP adresine bakarak bu hostun kendi ağına dahil olmadığını biliyor. Çünkü kendi IP adresini ve alt ağ maskesini yani subnet mask değerini biliyor. Bu sayede kendi ağındaki IP aralığını kontrol edip, bu ağın kendi ağındaki bir host olmadığını öğrenebiliyor. 
 
