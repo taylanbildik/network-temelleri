@@ -101,7 +101,7 @@ Yukarıdaki diyagramda **192.168.1.X** ağında bağlı cihazlar routerın ip ad
 
 **192.168.2.X** ağına bağlı cihazlar ise aynı routerın ip adresini **192.168.2.254** olarak görüyor. Yani routerlar bağlı bulundukları ağlara dahil olmak üzere bağımsız ip adresleri alabiliyorlar.
 
-Bu sayede ağlara dahil olup ağlar arasında “**getway**” olarak isimlendirilen “geçit” görevi görebiliyorlar. Örneğin **192.168.1.**0 ağındaki **30** numaralı hostun “default getway” adresi aşağıdaki gibidir. 
+Bu sayede ağlara dahil olup ağlar arasında “**getway**” olarak isimlendirilen “geçit” görevi görebiliyorlar. Örneğin **192.168.1.0** ağındaki **30** numaralı hostun “default getway” adresi aşağıdaki gibidir. 
 
 ![default-getway.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/ag-aygitlari/default-getway.webp)
 Hostlar kendi ağlarının dışındaki bir host ile iletişime geçmek istediklerinde, diğer ağlara veri paketlerini yönlendiren yapı “default getway”’dir. 
