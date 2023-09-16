@@ -66,7 +66,7 @@ IP adreslerini anlamak, ağların oluşumunu kavramak için önemli olduğundan 
 
 Bilgisayar dünyasında verilerin 0 ve 1’lerden ibaret olduğunu mutlaka daha önce duymuşsunuzdur. **0** ve **1** aslında “**binary**” yani “**ikili**“ sayı sistemi sayesinde verilerin temsil edilmesini sağlıyor. Bilgisayar dünyasındaki en küçük birim olan bu “0” veya “1” olma durumuna da “**bit**” deniyor. Yani bir bitlik bir veri ya “**0**” ya da “**1**” olabilir. Bu sebeple IP adresleri de aslında 0 ve 1’lerden oluşan bitlerle tanımlanıyor. 
 
-IPv4 olarak geçen IP adresleri birbirinden noktalar ile ayrılmış 4 adet 8’er bitten toplam 32 bit uzunluğunda bir değerdir. IP adresindeki her **8 bitlik** bloklar da aslında “**oktet**” ****olarak isimlendiriliyor. Dolayısıyla bir IP adresi aşağıdaki aralıkta olabilir.
+IPv4 olarak geçen IP adresleri birbirinden noktalar ile ayrılmış 4 adet 8’er bitten toplam 32 bit uzunluğunda bir değerdir. IP adresindeki her **8 bitlik** bloklar da aslında “**oktet**” olarak isimlendiriliyor. Dolayısıyla bir IP adresi aşağıdaki aralıkta olabilir.
 
 ![ip-range.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/temel-kavramlar/ip-range.webp)
 
