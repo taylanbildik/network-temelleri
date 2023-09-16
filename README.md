@@ -9,4 +9,6 @@ Ağ temelleri hakkında giriş seviyesi teorik bilgi için bu eğitim serisini t
 
 3- [Ağ Aygıtları](https://github.com/taylanbildik/network-temelleri/blob/main/ag-aygitlari.md) : Ağ oluşturma ve yönetme konusunda çözümler sunan bazı temel ağ aygıtlarını tanıyoruz.
 
-4- [OSI TCP/IP Modeli](https://github.com/taylanbildik/network-temelleri/blob/main/osi-modeli.md)  : OSI ve TCP/IP modellerini ele alarak ağın temel çalışma yapısına daha yakından bakıyoruz.
+4- [OSI TCP/IP Modeli](https://github.com/taylanbildik/network-temelleri/blob/main/osi-modeli.md) : OSI ve TCP/IP modellerini ele alarak ağın temel çalışma yapısına daha yakından bakıyoruz.
+
+5- [Hostlar Nasıl Haberleşir ?](https://github.com/taylanbildik/network-temelleri/blob/main/hostlar-nasil-haberlesir.md) : Host cihazlarının, lokal ve harici ağlarda nasıl iletişim kurduğunu ele alıyoruz.
