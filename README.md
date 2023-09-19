@@ -12,3 +12,5 @@ Ağ temelleri hakkında giriş seviyesi teorik bilgi için bu eğitim serisini t
 4- [OSI TCP/IP Modeli](https://github.com/taylanbildik/network-temelleri/blob/main/osi-modeli.md) : OSI ve TCP/IP modellerini ele alarak ağın temel çalışma yapısına daha yakından bakıyoruz.
 
 5- [Hostlar Nasıl Haberleşir ?](https://github.com/taylanbildik/network-temelleri/blob/main/hostlar-nasil-haberlesir.md) : Host cihazlarının, lokal ve harici ağlarda nasıl iletişim kurduğunu ele alıyoruz.
+
+6- [Switch Nasıl Çalışır ?](https://github.com/taylanbildik/network-temelleri/blob/main/switch-nasil-calisir.md) : Switch aygıtlarının nasıl çalıştığını temel düzeyde ele alıyoruz.
