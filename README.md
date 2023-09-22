@@ -14,3 +14,5 @@ Ağ temelleri hakkında giriş seviyesi teorik bilgi için bu eğitim serisini t
 5- [Hostlar Nasıl Haberleşir ?](https://github.com/taylanbildik/network-temelleri/blob/main/hostlar-nasil-haberlesir.md) : Host cihazlarının, lokal ve harici ağlarda nasıl iletişim kurduğunu ele alıyoruz.
 
 6- [Switch Nasıl Çalışır ?](https://github.com/taylanbildik/network-temelleri/blob/main/switch-nasil-calisir.md) : Switch aygıtlarının nasıl çalıştığını temel düzeyde ele alıyoruz.
+
+7- [Router Nasıl Çalışır ?](https://github.com/taylanbildik/network-temelleri/blob/main/router-nasil-calisir.md) : Router aygıtlarının nasıl çalıştığını temel düzeyde ele alıyoruz.
