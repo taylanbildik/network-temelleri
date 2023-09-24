@@ -16,3 +16,5 @@ Ağ temelleri hakkında giriş seviyesi teorik bilgi için bu eğitim serisini t
 6- [Switch Nasıl Çalışır ?](https://github.com/taylanbildik/network-temelleri/blob/main/switch-nasil-calisir.md) : Switch aygıtlarının nasıl çalıştığını temel düzeyde ele alıyoruz.
 
 7- [Router Nasıl Çalışır ?](https://github.com/taylanbildik/network-temelleri/blob/main/router-nasil-calisir.md) : Router aygıtlarının nasıl çalıştığını temel düzeyde ele alıyoruz.
+
+8- [Ağ Protokolleri](https://github.com/taylanbildik/network-temelleri/blob/main/ag-protokolleri.md) : Temel network protokollerini(ARP FTP SMTP HTTP SSL TLS DNS DHCP) kısaca ele alıyoruz.
