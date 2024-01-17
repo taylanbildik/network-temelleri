@@ -18,3 +18,20 @@ Ağ temelleri hakkında giriş seviyesi teorik bilgi için bu eğitim serisini t
 7- [Router Nasıl Çalışır ?](https://github.com/taylanbildik/network-temelleri/blob/main/router-nasil-calisir.md) : Router aygıtlarının nasıl çalıştığını temel düzeyde ele alıyoruz.
 
 8- [Ağ Protokolleri](https://github.com/taylanbildik/network-temelleri/blob/main/ag-protokolleri.md) : Temel network protokollerini(ARP FTP SMTP HTTP SSL TLS DNS DHCP) kısaca ele alıyoruz.
+
+# Youtube Oynatma Listesi
+
+Anlatımları youtube üzerinden videolar aracılığı ile takip etmek için oynatma listesine göz atın.
+
+[![Açıklama 1](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/cover/Thumb.png)](https://www.youtube.com/playlist?list=PLe-saRM3WlvNJFG4DfwYzTL9P20M6DPHj)
+
+
+# Ücretsiz Udemy Eğitimleri
+
+Anlatımları udemy üzerinden takip edebilirsiniz.
+
+| Ağ Temellerine Giriş - Bölüm 1 | Ağ Temellerine Giriş - Bölüm 2 |
+| ----------------------------- | ---------------------------- |
+| [![Açıklama 1](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/cover/Network-Course-Cover1.png)](https://www.udemy.com/course/temel-ag-egitimi/) | [![Açıklama 2](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/cover/Network-Course-Cover2.png)](https://www.udemy.com/course/temel-ag-egitimi-2/)|
+
+**Not:** Udemy kuralları gereği ücretsiz kurslar 2 saati aşamadığı için eğitim 2 parça halinde sunulmuştur.
