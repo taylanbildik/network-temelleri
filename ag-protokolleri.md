@@ -152,7 +152,7 @@ Esasen DNS konusu çok daha fazla detayı barındırıyor olmasına karşın en 
 
 - IP adresi
 - Subnet Mask değeri
-- Default Getway bilgisi
+- Default Gateway bilgisi
 - DNS Server IP adresi
 
 Şimdi sırasıyla neden bu 4 bilgiye ihtiyaç olduğunu kısaca izah edelim.
