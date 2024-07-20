@@ -101,12 +101,12 @@ Yukarıdaki diyagramda **192.168.1.X** ağında bağlı cihazlar routerın ip ad
 
 **192.168.2.X** ağına bağlı cihazlar ise aynı routerın ip adresini **192.168.2.254** olarak görüyor. Yani routerlar bağlı bulundukları ağlara dahil olmak üzere bağımsız ip adresleri alabiliyorlar.
 
-Bu sayede ağlara dahil olup ağlar arasında “**getway**” olarak isimlendirilen “geçit” görevi görebiliyorlar. Örneğin **192.168.1.0** ağındaki **30** numaralı hostun “default getway” adresi aşağıdaki gibidir. 
+Bu sayede ağlara dahil olup ağlar arasında “**gateway**” olarak isimlendirilen “geçit” görevi görebiliyorlar. Örneğin **192.168.1.0** ağındaki **30** numaralı hostun “default gateway” adresi aşağıdaki gibidir. 
 
 ![default-getway.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/ag-aygitlari/default-getway.webp)
-Hostlar kendi ağlarının dışındaki bir host ile iletişime geçmek istediklerinde, diğer ağlara veri paketlerini yönlendiren yapı “default getway”’dir. 
+Hostlar kendi ağlarının dışındaki bir host ile iletişime geçmek istediklerinde, diğer ağlara veri paketlerini yönlendiren yapı “default gateway”’dir. 
 
-Örneğin aynı router’a bağlı olan **192.168.2.X** ağındaki bir host için **default getway** adresi de **192.168.2.254**’dür.
+Örneğin aynı router’a bağlı olan **192.168.2.X** ağındaki bir host için **default gateway** adresi de **192.168.2.254**’dür.
 
 ![default-getway2.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/ag-aygitlari/default-getway2.webp)
 Benzer şekilde ev ağımız olan LAN üzerinden internet olarak bilinen geniş WAN ağına çıkmak için router kullanıyoruz. Bu sayede evimizdeki ağa bağlı olan tüm cihazlar router üzerinden internete bağlanabiliyor. 
@@ -114,15 +114,15 @@ Benzer şekilde ev ağımız olan LAN üzerinden internet olarak bilinen geniş 
 Modem olarak bildiğiniz cihaz da aslında kendi içinde switch ve router barındıran bir cihazdır. Bu cihaz sayesinde evimizdeki cihazlar birer host olarak kendi ağımıza bağlanıp, bu ağ da router ile internet servis sağlayıcına bağlanarak internet ağına erişmemiz mümkün oluyor.
 
 ![LAN-to-WAN-with-router.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/ag-aygitlari/LAN-to-WAN-with-router.webp)
-Gerçek dünya örneği olması açısından modeminiz yani routerınızın ip adresinin bu ağa bağlı olan hostların default getway adresi olduğunu kendi ağınız üzerinden teyit edebilirsiniz. Bunun için daha önce lokal ip adresinizi öğrenmek üzere konsola girmiş olduğunuz `ifconfig` veya `ip addr` komutlarını tekrar girip çıktılara göz atabilirsiniz.
+Gerçek dünya örneği olması açısından modeminiz yani routerınızın ip adresinin bu ağa bağlı olan hostların default gateway adresi olduğunu kendi ağınız üzerinden teyit edebilirsiniz. Bunun için daha önce lokal ip adresinizi öğrenmek üzere konsola girmiş olduğunuz `ifconfig` veya `ip addr` komutlarını tekrar girip çıktılara göz atabilirsiniz.
 
 ![ipconfig.webp]({{ site.url }}/egitim/temel-network/temel-kavramlar/ipconfig.webp)
-Bakın burada, benim Windows hostum **Default Getway** adresi olarak **192.168.1.1** değerini almış. Eğer bu ip adresini tarayıcıma yazıp onaylayacak olursam, modemimin konfigürasyon penceresi açılacak.
+Bakın burada, benim Windows hostum **Default gateway** adresi olarak **192.168.1.1** değerini almış. Eğer bu ip adresini tarayıcıma yazıp onaylayacak olursam, modemimin konfigürasyon penceresi açılacak.
 
 ![default-getway-login.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/ag-aygitlari/default-getway-login.webp)
-Bu pencere açıldı çünkü benim bilgisayarımda default getway olarak bu modem(router) kullanılıyor. Yani ben lokal ağımdan geniş ağ olan internete bu geçit(getway) görevi gören modem(router) üzerinden çıkış yapıyorum. Dolayısıyla bu ip adresini girdiğimde modemimi konfigüre edebileceğim pencere açılıyor.
+Bu pencere açıldı çünkü benim bilgisayarımda default gateway olarak bu modem(router) kullanılıyor. Yani ben lokal ağımdan geniş ağ olan internete bu geçit(gateway) görevi gören modem(router) üzerinden çıkış yapıyorum. Dolayısıyla bu ip adresini girdiğimde modemimi konfigüre edebileceğim pencere açılıyor.
 
-Burada modem, lokal ip adreslerini internet servis sağlayıcısının bana tahsis etmiş olduğu genel(public) ip ile **NAT**(**N**etwork **A**ddress **T**ranslation) sayesinde dönüştürüp benim internet ağına çıkmamı sağlayan bir geçittir(getway). 
+Burada modem, lokal ip adreslerini internet servis sağlayıcısının bana tahsis etmiş olduğu genel(public) ip ile **NAT**(**N**etwork **A**ddress **T**ranslation) sayesinde dönüştürüp benim internet ağına çıkmamı sağlayan bir geçittir(gateway). 
 
 ![NAT.webp](https://raw.githubusercontent.com/taylanbildik/network-temelleri/main/ag-aygitlari/NAT.webp)
 
